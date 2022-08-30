@@ -1,14 +1,14 @@
 node {
 	stage('Checkout') {
-		git branch: 'main', url: 'https://github.com/mayank092543/Team2DataInfoService.git'
+		git branch: 'main', url: '/home/osboxes/team2DataService/Team2DataInfoService/ChrisMayankDataService'
 		}
 		
     stage ("Gradle Build - DataApi") {
-        sh 'gradle -b ChrisMayankDataService/build.gradle clean build'
+        sh 'gradle clean build'
     }
     
     stage ("Gradle Bootjar-Package - DataApi") {
-        sh 'gradle -b ChrisMayankDataService/build.gradle bootjar'
+        sh 'gradle bootjar'
     }
     
     stage ("Containerize the app-docker build - DataApi") {
