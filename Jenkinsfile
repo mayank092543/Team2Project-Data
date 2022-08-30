@@ -1,6 +1,6 @@
 node {
 	stage('Checkout') {
-		git branch: 'main', url: '/home/osboxes/team2DataService/Team2DataInfoService/ChrisMayankDataService'
+		git branch: 'main', url: 'https://github.com/mayank092543/roughdata.git'
 		}
 		
     stage ("Gradle Build - DataApi") {
