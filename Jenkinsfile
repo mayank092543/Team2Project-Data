@@ -1,6 +1,6 @@
 node {
 	stage('Checkout') {
-		git branch: 'main', url: 'https://github.com/mayank092543/roughdata.git'
+		git branch: 'main', url: 'https://github.com/mayank092543/Team2Project-Data.git'
 		}
 		
     stage ("Gradle Build - DataApi") {
